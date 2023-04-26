@@ -2,11 +2,12 @@ package com.bloomscorp.raintree.configuration;
 
 import com.google.gson.ExclusionStrategy;
 import com.google.gson.FieldAttributes;
+import org.jetbrains.annotations.NotNull;
 
 public class GsonExclusionStrategy implements ExclusionStrategy {
 
     @Override
-    public boolean shouldSkipField(FieldAttributes fieldAttributes) {
+    public boolean shouldSkipField(@NotNull FieldAttributes fieldAttributes) {
         return fieldAttributes.getAnnotation(GsonExclude.class) != null;
     }
 
