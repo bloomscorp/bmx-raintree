@@ -58,5 +58,4 @@ public abstract class RainResponse<E> {
 
 	public abstract String buildEntity(E entity);
 	public abstract String buildList(List<E> list);
-	public abstract <P, R> R prepareResponse(P parameter);
 }
