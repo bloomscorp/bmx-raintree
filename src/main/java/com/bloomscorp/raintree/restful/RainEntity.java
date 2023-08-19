@@ -6,6 +6,6 @@ import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
 @AllArgsConstructor
-public abstract class RainEntity<E> extends RainTreeResponse {
+public class RainEntity<E> extends RainTreeResponse {
 	public E entity;
 }
