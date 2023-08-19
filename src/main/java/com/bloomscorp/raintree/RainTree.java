@@ -14,6 +14,10 @@ public class RainTree {
         new GsonExclusionStrategy()
     ).create();
 
+    public String renderResponse(Object object) {
+        return RainTree.GSON.toJson(object);
+    }
+
     public String renderResponse(
             boolean success,
             String message,
