@@ -5,7 +5,12 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @NoArgsConstructor
-@AllArgsConstructor
 public class RainEntity<E> extends RainTreeResponse {
+
 	public E entity;
+
+	public RainEntity(E entity) {
+		this.entity = entity;
+		this.success = entity != null;
+	}
 }
